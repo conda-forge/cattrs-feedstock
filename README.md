@@ -22,10 +22,10 @@ All platforms:
 
 Current release info
 ====================
-[![Conda Recipe](https://img.shields.io/badge/recipe-cattrs-green.svg)](https://anaconda.org/conda-forge/cattrs)
-[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cattrs.svg)](https://anaconda.org/conda-forge/cattrs)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/cattrs.svg)](https://anaconda.org/conda-forge/cattrs)
-[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cattrs.svg)](https://anaconda.org/conda-forge/cattrs)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-cattrs-green.svg)](https://anaconda.org/conda-forge/cattrs) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/cattrs.svg)](https://anaconda.org/conda-forge/cattrs) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/cattrs.svg)](https://anaconda.org/conda-forge/cattrs) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/cattrs.svg)](https://anaconda.org/conda-forge/cattrs) |
 
 Installing cattrs
 =================
