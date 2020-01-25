@@ -1,6 +1,6 @@
 {% set name = "cattrs" %}
-{% set version = "0.9.0" %}
-{% set sha256 = "2232a568e079f30601de63839f4101283cb594c8719f5311bede25f89d0e09b7" %}
+{% set version = "1.0.0" %}
+{% set sha256 = "b7ab5cf8ad127c42eefd01410c1c6e28569a45a255ea80ed968511873c433c7a" %}
 
 package:
   name: {{ name|lower }}
@@ -12,17 +12,17 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 1
-  script: "{{ PYTHON }} -m pip install . -vv"
+  number: 0
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
 
 requirements:
   host:
-    - python >=3.5,<3.8
+    - python >=3.5
     - pip
     - attrs >=17.3
   run:
-    - python >=3.5,<3.8
+    - python >=3.5
     - attrs >=17.3
 
 test:
