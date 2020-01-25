@@ -18,11 +18,11 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.5,<3.8
     - pip
     - attrs >=17.3
   run:
-    - python >=3.5
+    - python >=3.5,<3.8
     - attrs >=17.3
 
 test:
