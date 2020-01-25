@@ -12,17 +12,17 @@ source:
   sha256: {{ sha256 }}
 
 build:
-  number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  number: 1
+  script: "{{ PYTHON }} -m pip install . -vv"
   noarch: python
 
 requirements:
-  build:
-    - python >=3.5
+  host:
+    - python >=3.5,<3.8
     - pip
     - attrs >=17.3
   run:
-    - python >=3.5
+    - python >=3.5,<3.8
     - attrs >=17.3
 
 test:
@@ -58,3 +58,4 @@ extra:
   recipe-maintainers:
     - aldanor
     - Tinche
+    - xylar
