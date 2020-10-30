@@ -5,9 +5,13 @@ Home: https://github.com/Tinche/cattrs
 
 Package license: MIT
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cattrs-feedstock/blob/master/LICENSE.txt)
 
 Summary: Complex custom class converters for attrs.
+
+Development: https://github.com/Tinche/cattrs
+
+Documentation: https://cattrs.readthedocs.io/en/latest/
 
 cattrs is an open source Python library for structuring and unstructuring data.
 cattrs works best with attrs classes and the usual Python collections, but other
