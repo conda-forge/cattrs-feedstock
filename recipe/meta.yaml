@@ -1,6 +1,6 @@
 {% set name = "cattrs" %}
-{% set version = "1.0.0" %}
-{% set sha256 = "b7ab5cf8ad127c42eefd01410c1c6e28569a45a255ea80ed968511873c433c7a" %}
+{% set version = "1.1.0" %}
+{% set sha256 = "6ec92a3816dc94afdcc24d76be738198a21870a0e64eace9c3ef0e56decd00df" %}
 
 package:
   name: {{ name|lower }}
@@ -18,12 +18,12 @@ build:
 
 requirements:
   host:
-    - python >=3.5
+    - python >=3.7
     - pip
-    - attrs >=17.3
+    - attrs >=20.1.0
   run:
-    - python >=3.5
-    - attrs >=17.3
+    - python >=3.7
+    - attrs >=20.1.0
 
 test:
   imports:
@@ -46,7 +46,7 @@ about:
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: 'Complex custom class converters for attrs.'
+  summary: Complex custom class converters for attrs.
   description: |
     cattrs is an open source Python library for structuring and unstructuring data.
     cattrs works best with attrs classes and the usual Python collections, but other
