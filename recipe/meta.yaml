@@ -1,6 +1,6 @@
 {% set name = "cattrs" %}
-{% set version = "1.1.1" %}
-{% set sha256 = "cd7579ef6ed80993bdd0e24a806493c48576caebd47b7b6ec2cd3cfd0b9a5f72" %}
+{% set version = "1.1.2" %}
+{% set sha256 = "a5873cd4745a74388557730247b4bb005d762f8aba0ab7aa55bcbd190bdf3322" %}
 
 package:
   name: {{ name|lower }}
@@ -30,8 +30,8 @@ test:
     - cattr
     - cattr.converters
 
-  ### Lines below can be uncommented if/when tests stop using relative imports and
-  ### instead import from the installed package like they're supposed to.
+  ### These tests could be added if we switch to getting the package from
+  ### GitHub, not pypi
 
   # requires:
   #   - pytest
