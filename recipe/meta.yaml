@@ -20,7 +20,6 @@ requirements:
   host:
     - python >=3.7
     - pip
-    - attrs >=20.1.0
   run:
     - python >=3.7
     - attrs >=20.1.0
