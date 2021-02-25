@@ -29,6 +29,10 @@ test:
   imports:
     - cattr
     - cattr.converters
+  requires:
+    - pip
+  commands:
+    - pip check
 
   ### These tests could be added if we switch to getting the package from
   ### GitHub, not pypi
