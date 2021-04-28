@@ -20,10 +20,10 @@ requirements:
   host:
     - python >=3.7
     - pip
-    - poetry
+    - poetry-core >=1.0.0
   run:
     - python >=3.7
-    - attrs >=20.1.0
+    - attrs
 
 test:
   imports:
