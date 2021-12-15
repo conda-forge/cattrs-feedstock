@@ -1,7 +1,7 @@
 About cattrs
 ============
 
-Home: https://github.com/Tinche/cattrs
+Home: https://github.com/python-attrs/cattrs
 
 Package license: MIT
 
@@ -9,7 +9,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cattrs-feedstoc
 
 Summary: Complex custom class converters for attrs.
 
-Development: https://github.com/Tinche/cattrs
+Development: https://github.com/python-attrs/cattrs
 
 Documentation: https://cattrs.readthedocs.io/en/latest/
 
