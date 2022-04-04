@@ -30,8 +30,8 @@ requirements:
 
 test:
   imports:
-    - cattr
-    - cattr.converters
+    - cattrs
+    - cattrs.converters
   requires:
     - pip
   commands:
