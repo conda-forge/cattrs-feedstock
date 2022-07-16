@@ -12,16 +12,17 @@ source:
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.7,<4.0
     - pip
     - poetry-core >=1.1.0a6
   run:
-    - python >=3.7
+    - python >=3.7,<4.0
     - attrs >=20
     - exceptiongroup
     - typing_extensions
