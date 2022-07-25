@@ -1,35 +1,36 @@
 {% set name = "cattrs" %}
-{% set version = "1.10.0" %}
-{% set sha256 = "211800f725cdecedcbcf4c753bbd22d248312b37d130f06045434acb7d9b34e1" %}
+{% set version = "22.1.0" %}
+
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ name }}-{{ version }}.tar.gz
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: {{ sha256 }}
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cattrs-{{ version }}.tar.gz
+  sha256: 94b67b64cf92c994f8784c40c082177dc916e0489a73a9a36b24eb18a9db40c6
 
 build:
   number: 0
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
   noarch: python
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
+  
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.7,<4.0
     - pip
-    - poetry-core >=1.1.0a6
+    - poetry-core >=1.1.0b3
   run:
-    - python >=3.7
+    - python >=3.7,<4.0
     - attrs >=20
+    - exceptiongroup
     - typing_extensions
 
 test:
   imports:
     - cattr
-    - cattr.converters
+    - cattr.preconf
   requires:
     - pip
   commands:
@@ -56,6 +57,9 @@ about:
     cattrs is an open source Python library for structuring and unstructuring data.
     cattrs works best with attrs classes and the usual Python collections, but other
     kinds of classes are supported by manually registering converters.
+
+    PyPI: [https://pypi.org/project/cattrs](https://pypi.org/project/cattrs)
+
   doc_url: https://cattrs.readthedocs.io/en/latest/
   dev_url: https://github.com/python-attrs/cattrs
 
@@ -64,3 +68,4 @@ extra:
     - aldanor
     - Tinche
     - xylar
+    - sugatoray
