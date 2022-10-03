@@ -18,13 +18,14 @@ build:
 
 requirements:
   host:
-    - python >=3.7,<4.0
+    - python >=3.7
     - pip
-    - poetry-core >=1.1.0b3
+    - poetry-core >=1.1.0
   run:
-    - python >=3.7,<4.0
+    - python >=3.7
     - attrs >=20
     - exceptiongroup
+    # only for py<3.8 but we want to stay noarch
     - typing_extensions
 
 test:
