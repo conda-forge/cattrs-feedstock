@@ -1,11 +1,11 @@
-About cattrs
-============
+About cattrs-feedstock
+======================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cattrs-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/python-attrs/cattrs
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/cattrs-feedstock/blob/main/LICENSE.txt)
 
 Summary: Complex custom class converters for attrs.
 
