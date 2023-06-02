@@ -23,9 +23,10 @@ requirements:
   run:
     - python >=3.7
     - attrs >=20
+    # only for py<3.11 but we want to stay noarch
+    - typing_extensions >=4.1.0
+    # only for py<3.11 but we want to stay noarch
     - exceptiongroup
-    # only for py<3.8 but we want to stay noarch
-    - typing_extensions
 
 test:
   imports:
