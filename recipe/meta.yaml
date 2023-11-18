@@ -10,23 +10,25 @@ source:
   sha256: c9685821a75dc8588b90e847f47bcb6fba7bce8f280d5dc4edd3290e827854ec
 
 build:
+  script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
   number: 0
   noarch: python
-  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 
 requirements:
   host:
-    - python >=3.7
+    - python >=3.8
+    - hatchling
+    - hatch-vcs
     - pip
     - poetry-core >=1.1.0
   run:
-    - python >=3.7
-    - attrs >=20
+    - python >=3.8
+    - attrs >=23.1.0
     # only for py<3.11 but we want to stay noarch
-    - typing_extensions >=4.1.0
+    - typing-extensions >=4.1.0,!=4.6.3
     # only for py<3.11 but we want to stay noarch
-    - exceptiongroup
+    - exceptiongroup >=1.1.1
 
 test:
   imports:
@@ -50,10 +52,10 @@ test:
 
 about:
   home: https://github.com/python-attrs/cattrs
+  summary: Composable complex class support for attrs and dataclasses.
   license: MIT
   license_family: MIT
   license_file: LICENSE
-  summary: Complex custom class converters for attrs.
   description: |
     cattrs is an open source Python library for structuring and unstructuring data.
     cattrs works best with attrs classes and the usual Python collections, but other
