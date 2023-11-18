@@ -7,7 +7,7 @@ Home: https://github.com/python-attrs/cattrs
 
 Package license: MIT
 
-Summary: Complex custom class converters for attrs.
+Summary: Composable complex class support for attrs and dataclasses.
 
 Development: https://github.com/python-attrs/cattrs
 
