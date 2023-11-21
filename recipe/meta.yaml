@@ -21,7 +21,6 @@ requirements:
     - hatchling
     - hatch-vcs
     - pip
-    - poetry-core >=1.1.0
   run:
     - python >=3.8
     - attrs >=23.1.0
