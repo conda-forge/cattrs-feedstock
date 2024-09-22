@@ -1,5 +1,5 @@
 {% set name = "cattrs" %}
-{% set version = "24.1.1" %}
+{% set version = "24.1.2" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cattrs-{{ version }}.tar.gz
-  sha256: 16e94a13f9aaf6438bd5be5df521e072b1b00481b4cf807bcb1acbd49f814c08
+  sha256: 8028cfe1ff5382df59dd36474a86e02d817b06eaf8af84555441bac915d2ef85
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
