@@ -6,23 +6,23 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/cattrs-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cattrs-{{ version }}.tar.gz
   sha256: 8028cfe1ff5382df59dd36474a86e02d817b06eaf8af84555441bac915d2ef85
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
-  number: 0
+  number: 1
   noarch: python
 
 
 requirements:
   host:
-    - python >=3.8
+    - python {{ python_min }}
     - hatchling
     - hatch-vcs
     - pip
   run:
-    - python >=3.8
+    - python >={{ python_min }}
     - attrs >=23.1.0
     # only for py<3.11 but we want to stay noarch
     - typing-extensions >=4.1.0,!=4.6.3
@@ -35,6 +35,7 @@ test:
     - cattr.preconf
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
 
