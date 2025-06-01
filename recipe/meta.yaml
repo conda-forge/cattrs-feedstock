@@ -24,7 +24,6 @@ requirements:
   run:
     - python >={{ python_min }}
     - attrs >=24.3.0
-    # only for py<3.11 but we want to stay noarch
     - typing_extensions >=4.12.2
     # only for py<3.11 but we want to stay noarch
     - exceptiongroup >=1.1.1
