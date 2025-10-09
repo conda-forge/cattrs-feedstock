@@ -1,5 +1,5 @@
 {% set name = "cattrs" %}
-{% set version = "25.2.0" %}
+{% set version = "25.3.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/cattrs-{{ version }}.tar.gz
-  sha256: f46c918e955db0177be6aa559068390f71988e877c603ae2e56c71827165cc06
+  sha256: 1ac88d9e5eda10436c4517e390a4142d88638fe682c436c93db7ce4a277b884a
 
 build:
   script: {{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
@@ -23,8 +23,8 @@ requirements:
     - pip
   run:
     - python >={{ python_min }}
-    - attrs >=24.3.0
-    - typing_extensions >=4.12.2
+    - attrs >=25.4.0
+    - typing_extensions >=4.14.0
     # only for py<3.11 but we want to stay noarch
     - exceptiongroup >=1.1.1
 
