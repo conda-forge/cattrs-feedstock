@@ -35,13 +35,8 @@ tests:
       imports:
         - cattr
         - cattr.preconf
+      pip_check: true
       python_version: ${{ python_min }}.*
-  - requirements:
-      run:
-        - pip
-        - python ${{ python_min }}.*
-    script:
-      - pip check
 
 about:
   summary: Composable complex class support for attrs and dataclasses.
