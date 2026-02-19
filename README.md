@@ -19,7 +19,6 @@ kinds of classes are supported by manually registering converters.
 
 PyPI: [https://pypi.org/project/cattrs](https://pypi.org/project/cattrs)
 
-
 Current build status
 ====================
 
