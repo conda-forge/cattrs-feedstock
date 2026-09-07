@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: cattrs
-  version: 26.1.0
+  version: "26.2.0"
 
 package:
   name: ${{ name|lower }}
@@ -10,10 +10,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/cattrs-${{ version }}.tar.gz
-  sha256: fa239e0f0ec0715ba34852ce813986dfed1e12117e209b816ab87401271cdd40
+  sha256: 3cf49f69df8326bcf17a3cb3d3d3ec4a856858fe3a7473746c9044c317d3ba55
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: ${{ PYTHON }} -m pip install . -vv --no-deps --no-build-isolation
 
